@@ -1,7 +1,12 @@
 aid: go-x
 name: Go X
-description: Go X is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Go X is an electric micromobility sharing company that lets riders rent
+  scooters, e-bikes, and cars on demand, 24/7, through a consumer mobile app. Operating
+  in cities such as New Orleans, Go X builds its own connected electric vehicles and
+  manages fleet access, unlocking, ride sessions, and payments entirely in-app on
+  iOS and Android. It is a consumer-facing mobility service rather than a public API
+  provider: it exposes no developer portal, documentation, SDKs, or documented public
+  API surface (its api.goxapp.com host is the private backend for the mobile apps).'
 url: https://raw.githubusercontent.com/api-evangelist/go-x/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +14,30 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://goxapp.com/assets/0654faaf65d035705ee9ef75144447d3.png
 tags:
 - Company
+- Micromobility
+- Electric Scooters
+- Scooter Sharing
+- E-Bikes
+- Mobility
+- Transportation
+- Vehicle Rental
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/go-x-domain-security.yml
 - type: Website
   url: https://goxapp.com
+- type: Blog
+  url: https://blog.goxapp.com/
+- type: PrivacyPolicy
+  url: https://goxapp.com/privacy-policy
+- type: Support
+  url: https://goxapp.com/contact
+- type: SignUp
+  url: https://app.goxapp.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
